@@ -1,0 +1,11 @@
+
+num   std   Art   PE   Law   Math   
+01   James   86   75   63   98     
+03   Curry   99   76   74   62   
+04   Abner   77   63   66   61   
+05   Adair   89   87   93   76   
+06   Ahern   48   63   87   72   
+07   Byron   67   71   73   79   
+09   Kevin   97   87   86   79   
+10   Magee   89   87   92   76   
+11   Merle   58   67   78   71   

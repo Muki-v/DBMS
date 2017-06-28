@@ -1,0 +1,100 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'D_Main.ui'
+#
+# Created by: PyQt5 UI code generator 5.8.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(455, 376)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.group_DB_Interact = QtWidgets.QGroupBox(self.centralwidget)
+        self.group_DB_Interact.setGeometry(QtCore.QRect(10, 30, 431, 311))
+        self.group_DB_Interact.setObjectName("group_DB_Interact")
+        self.widget_OpButtons = QtWidgets.QWidget(self.group_DB_Interact)
+        self.widget_OpButtons.setGeometry(QtCore.QRect(300, 70, 91, 211))
+        self.widget_OpButtons.setObjectName("widget_OpButtons")
+        self.pushButton_Add = QtWidgets.QPushButton(self.widget_OpButtons)
+        self.pushButton_Add.setGeometry(QtCore.QRect(10, 20, 75, 23))
+        self.pushButton_Add.setObjectName("pushButton_Add")
+        self.pushButton_Delete = QtWidgets.QPushButton(self.widget_OpButtons)
+        self.pushButton_Delete.setGeometry(QtCore.QRect(10, 70, 75, 23))
+        self.pushButton_Delete.setObjectName("pushButton_Delete")
+        self.pushButton_Update = QtWidgets.QPushButton(self.widget_OpButtons)
+        self.pushButton_Update.setGeometry(QtCore.QRect(10, 120, 75, 23))
+        self.pushButton_Update.setObjectName("pushButton_Update")
+        self.pushButton_Search = QtWidgets.QPushButton(self.widget_OpButtons)
+        self.pushButton_Search.setGeometry(QtCore.QRect(10, 170, 75, 23))
+        self.pushButton_Search.setObjectName("pushButton_Search")
+        self.widget = QtWidgets.QWidget(self.group_DB_Interact)
+        self.widget.setGeometry(QtCore.QRect(20, 30, 271, 271))
+        self.widget.setObjectName("widget")
+        self.comboBox_DSetChoose = QtWidgets.QComboBox(self.widget)
+        self.comboBox_DSetChoose.setGeometry(QtCore.QRect(30, 0, 91, 22))
+        self.comboBox_DSetChoose.setObjectName("comboBox_DSetChoose")
+        self.pushButton_DSetShow = QtWidgets.QPushButton(self.widget)
+        self.pushButton_DSetShow.setGeometry(QtCore.QRect(150, 0, 75, 23))
+        self.pushButton_DSetShow.setObjectName("pushButton_DSetShow")
+        self.tableWidget_DSet = QtWidgets.QTableWidget(self.widget)
+        self.tableWidget_DSet.setGeometry(QtCore.QRect(10, 40, 241, 221))
+        self.tableWidget_DSet.setObjectName("tableWidget_DSet")
+        self.tableWidget_DSet.setColumnCount(0)
+        self.tableWidget_DSet.setRowCount(0)
+        # MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        # MainWindow.setStatusBar(self.statusbar)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 455, 23))
+        self.menubar.setObjectName("menubar")
+        self.menuOperations = QtWidgets.QMenu(self.menubar)
+        self.menuOperations.setObjectName("menuOperations")
+        # MainWindow.setMenuBar(self.menubar)
+        self.action_FtoM = QtWidgets.QAction(MainWindow)
+        self.action_FtoM.setObjectName("action_FtoM")
+        self.action_DBtoM = QtWidgets.QAction(MainWindow)
+        self.action_DBtoM.setObjectName("action_DBtoM")
+        self.action_Extract = QtWidgets.QAction(MainWindow)
+        self.action_Extract.setObjectName("action_Extract")
+        self.action_Exit = QtWidgets.QAction(MainWindow)
+        self.action_Exit.setObjectName("action_Exit")
+        self.menuOperations.addAction(self.action_FtoM)
+        self.menuOperations.addAction(self.action_DBtoM)
+        self.menuOperations.addSeparator()
+        self.menuOperations.addAction(self.action_Extract)
+        self.menuOperations.addSeparator()
+        self.menuOperations.addAction(self.action_Exit)
+        self.menubar.addAction(self.menuOperations.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.group_DB_Interact.setTitle(_translate("MainWindow", "DB Interact"))
+        self.pushButton_Add.setText(_translate("MainWindow", "add"))
+        self.pushButton_Delete.setText(_translate("MainWindow", "delete"))
+        self.pushButton_Update.setText(_translate("MainWindow", "Update"))
+        self.pushButton_Search.setText(_translate("MainWindow", "Search"))
+        self.pushButton_DSetShow.setText(_translate("MainWindow", "Show"))
+        self.menuOperations.setTitle(_translate("MainWindow", "Operations"))
+        self.action_FtoM.setText(_translate("MainWindow", "Read file to Memory"))
+        self.action_DBtoM.setText(_translate("MainWindow", "Read db to Memory"))
+        self.action_Extract.setText(_translate("MainWindow", "Extract"))
+        self.action_Exit.setText(_translate("MainWindow", "Exit"))
+
+if __name__=="__main__":
+    import sys
+    app=QtWidgets.QApplication(sys.argv)
+    widget=QtWidgets.QWidget()
+    ui=Ui_MainWindow()
+    ui.setupUi(widget)
+    widget.show()
+    sys.exit(app.exec_())

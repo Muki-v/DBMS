@@ -1,0 +1,11 @@
+
+num   std   IDNumble Class 
+01   James   0410301 3 
+02   Aaron   0410302 3 
+03   Curry   0410101 1 
+04   Abner   0410110 1 
+05   Adair   0410206 2 
+06   Ahern   0410231 2 
+07   Byron   0410109 1 
+09   Kevin   0410309 3 
+10   Magee   0410219 2 
