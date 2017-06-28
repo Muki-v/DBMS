@@ -180,3 +180,5 @@ if __name__ == '__main__':
     mainpage = MainWindow()
     print(mainpage.exec_())
     print(mainpage.result() == QtWidgets.QDialog.Accepted)
+    print("hello world")
+    print("hello2")
