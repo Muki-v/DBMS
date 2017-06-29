@@ -2,7 +2,7 @@
 
 
 class VAR:
-    FOLDER_PATH = "..\src\DBFile"
+    FOLDER_PATH = ".\src\DBFile"
 
 
 if __name__ == '__main__':

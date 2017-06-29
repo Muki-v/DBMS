@@ -11,6 +11,7 @@ from src.DiskInteract import diskToMemory, memoryToDisk
 from os import listdir
 from os import path
 import pickle  # want to know more about this package
+from PyQt5.QtGui import QIcon
 
 from src.D_Main import Ui_MainWindow as index
 
@@ -19,6 +20,7 @@ class MainWindow(QtWidgets.QDialog):
     closeSignal = QtCore.pyqtSignal()
     def __init__(self, parent=None):
         super(QtWidgets.QDialog, self).__init__(parent)
+        self.setWindowIcon(QIcon('C:\\Users\\asus\\Pictures\\Camera Roll\\smiley.gif'))
         self.ui = index()
         self.ui.setupUi(self)
         # disable all push buttons in the beginning.
